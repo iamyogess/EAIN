@@ -2,14 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
-  const isHomePage =
-    typeof window !== "undefined" && window.location.pathname === "/";
-
   return (
     <div
-      className={`max-container max-w-2xl relative w-full h-screen flex items-center justify-center overflow-hidden ${
-        isHomePage ? "home-page" : ""
-      }`}
+      className={`max-container max-w-2xl relative w-full h-screen flex items-center justify-center overflow-hidden`}
     >
       <Image
         className="w-full h-full object-cover"

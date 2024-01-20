@@ -33,7 +33,7 @@ const Pages = () => {
             reprehenderit consectetur, iure ipsa obcaecati rem vel sunt quas
             aut, alias veritatis officia qui laboriosam asperiores .
           </p>
-          <Link href="/" className="text-[#0B60B0]">
+          <Link href={`/posts/45`} className="text-[#0B60B0]">
             Read more...
           </Link>
         </div>

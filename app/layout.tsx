@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  isHomePage,
 }: Readonly<{
   children: React.ReactNode;
   isHomePage?: boolean; // Add this line to define isHomePage property
@@ -18,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {!isHomePage && <Navbar />}
+        <Navbar/>
         <main className="relative overflow-hidden">{children}</main>
         <Footer />
       </body>

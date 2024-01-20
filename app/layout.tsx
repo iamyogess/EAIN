@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "EAIN",
@@ -11,12 +10,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  isHomePage,
 }: Readonly<{
   children: React.ReactNode;
+  isHomePage?: boolean; // Add this line to define isHomePage property
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        {!isHomePage && <Navbar />}
+        <main className="relative overflow-hidden">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
+

@@ -21,11 +21,12 @@ const Navbar = () => {
   }, []);
   return (
     <div
-      className={
-        !fix
-          ? "w-full bg-transparent flexBetween max-container padding-container absolute z-30 py-5 transition-all duration-500 ease-in-out"
-          : "w-full theme_color shadow-bottom flexBetween max-container padding-container py-5 z-30 sticky top-0 transition-all duration-500 ease-in-out"
-      }
+    className={
+      !fix
+        ? "w-full bg-transparent flexBetween max-container padding-container fixed z-30 py-5 transition-all duration-500 ease-in-out"
+        : "w-full theme_color shadow-bottom flexBetween max-container padding-container py-5 z-30 fixed top-0 transition-all duration-500 ease-in-out"
+    }
+    
     >
       {/* <Image/> */}
       <span className="bold-32 text-white">LOGO</span>

@@ -12,16 +12,14 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-  isHomePage?: boolean; // Add this line to define isHomePage property
 }>) {
   return (
     <html lang="en">
       <body>
-        <Navbar/>
+        {/* <Navbar /> */}
         <main className="relative overflow-hidden">{children}</main>
         <Footer />
       </body>
     </html>
   );
 }
-

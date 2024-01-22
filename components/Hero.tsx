@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 const Hero = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div
         className={`max-container max-w-2xl relative w-full h-screen flex items-center justify-center overflow-hidden`}
       >

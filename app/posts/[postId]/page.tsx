@@ -3,7 +3,9 @@ import React from 'react'
 
 const page = () => {
   return (
-   <SinglePost/>
+   <div className='mt-20'>
+    <SinglePost/>
+   </div>
   )
 }
 
